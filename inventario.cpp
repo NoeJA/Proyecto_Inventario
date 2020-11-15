@@ -1,5 +1,7 @@
-#include "capital.h"
-
+#include "inventario.h"
+#include<iostream>
+#include<vector>
+#include<string>
 using namespace std;
 
 void inventario::AddArticle(vector<string> articleVec,string article){
