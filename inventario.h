@@ -1,5 +1,5 @@
-#ifndef CAPITAL_H
-#define CAPITAL_H
+#ifndef INVENTARIO_H
+#define INVENTARIO_H
 #include<string>
 
 class inventario
