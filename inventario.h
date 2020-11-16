@@ -1,25 +1,26 @@
 #ifndef INVENTARIO_H
 #define INVENTARIO_H
 #include<string>
+#include <vector>
+
+using namespace std;
 
 class inventario
 {
-	public:
-		();
-	void AddArticle(vector<string> articleVec,string article);
-		void DelArticle(string article);
-		int setAmount(vector<int> nArticles,int amount);
-		void setCost(vector<float> Cost,float cost);
-		void setSell(vector<float> Sell,float cost_sell );
-		void printInv(vector<> inventario, int lenInv);
-		float calcGain;
-		
-		
-	private:
-		vector<string> articleVec;
-		vector<int> nArticles;
-		vector<float> Cost;
-		vector<float> Sell;
+private:
+    vector<string> articleVec;
+    vector<int> nArticles;
+    vector<float> Cost;
+    vector<float> Sell;
+public:
+    void AddArticle(vector<string> articleVec,string article);
+    void DelArticle(vector<string> articleVec, string article);
+    void setAmount(vector<int> nArticles,int amount);
+    void setCost(vector<float> Cost,float cost);
+    void setSell(vector<float> Sell,float costsell );
+    void printInv(vector<string> articleVec,vector<int> nArticles,vector<float> Cost,vector<float> Sell);
+    float calcGain(vector<int> nArticles, vector<float> Cost, vector<float> Sell);
 };
 
-#endif
+
+#endif //PROYECTO_COMPU_INVENTARIO_H
