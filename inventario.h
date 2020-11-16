@@ -5,14 +5,14 @@
 class inventario
 {
 	public:
-	
-	void AddArticle(string article);
+		();
+	void AddArticle(vector<string> articleVec,string article);
 		void DelArticle(string article);
-		int setAmount(int amount);
-		void setCost(float cost);
-		void setSell(float cost_sell );
+		int setAmount(vector<int> nArticles,int amount);
+		void setCost(vector<float> Cost,float cost);
+		void setSell(vector<float> Sell,float cost_sell );
 		void printInv(vector<> inventario, int lenInv);
-		float calcGain(vector<int> nArticles,vector<float> Cost,vector<float> Sell);
+		float calcGain;
 		
 		
 	private:
